@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="sanpham.css">
+	<title>Sản phẩm</title>
+</head>
+<body>
+	<!-- Phần header -->
+	<header class="fixed">
+		<div class="sub-header">
+			<ul class="sub-container social">
+				<p> Hotline: +84 (28) 391 44 309</p>
+			</ul>
+			<ul class="sub-container user">
+				<li class="icon">
+					<img src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png" width="20" height="20">
+				</li>
+				<li class="login-resignter" style="color: white;">
+					<a href="./dangnhap.html">Đăng nhập</a>
+					/
+					<a href="./dangky.html">Đăng ký</a>
+				</li>
+				<li class="icon">
+					<a href="./giohang.html">
+						<img src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png" width="21" height="22">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sub-container2">
+			<div class="sub-content">
+				<div class="content-img">
+					<a href="./trangchu.html">
+						<img src="https://lndesign.com.vn/wp-content/uploads/2020/09/logo-moi-2.png" height="65">
+					</a>
+				</div>
+				<div class="content-list">
+					<ul>
+						<li>
+							<a href="#">
+								<img onclick="openSearch()" src="./image/search.png" width="23" height="23">
+							</a>
+							<!-- Hiện ra tìm kiếm -->
+							<div id="myOverlay" class="overlay" style="display: none;">
+								<span class="closebtn" onclick="closeSearch()">×</span>
+								<div class="overlay-content">
+								<form>
+									<input type="text" placeholder="Tìm Kiếm" name="search">
+									<button type="submit" style="width: 230px;height: 50px;">Xem tất cả các kết quả</button>
+								</form>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./tintuc.html">Tin tức</a>
+						</li>
+						<li>
+							<a href="./thietke.html">Thiết kế</a>
+						</li>
+						<li>
+							<a href="./gioithieu.html">Giới thiệu</a>
+						</li>
+						<li>
+							<div class="drop-down2">
+   								<a class="nut_dropdown">Sản phẩm</a>
+   								<div class="noidung_dropdown">
+     								<a href="./sanpham.html">Sofa</a>
+     								<a href="./sanpham.html">Bàn</a>
+     								<a href="./sanpham.html">Ghế</a>
+     								<a href="./sanpham.html">Giường</a>
+     								<a href="./sanpham.html">Tủ</a>
+     								<a href="./sanpham.html">Sale off</a>
+  								 </div>
+ 							</div>
+						</li>
+						<li>
+							<a href="./trangchu.html">Trang chủ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Hết phần header -->
+
+	<!-- Phần thân -->
+	<div class="main-contain">
+		<!-- Phần banner -->
+		<div class="slider">
+            <div class="slides">
+            	<input type="radio" name="radio-btn" id="radio1">
+            	<input type="radio" name="radio-btn" id="radio2">
+            	<input type="radio" name="radio-btn" id="radio3">
+        		<!-- Các slide ảnh -->
+            	<div class="slide first">
+                	<img src="./image/sanpham1.png" style="width: 100%">
+            	</div>
+            	<div class="slide">
+                	<img src="./image/sanpham2.png" style="width: 100%;">
+            	</div>
+            	<div class="slide">
+                	<img src="./image/sanpham3.png" style="width: 100%;">
+            	</div>
+            	<div class="navigation-auto">
+                	<div class="auto-btn1"></div>
+                	<div class="auto-btn2"></div>
+                	<div class="auto-btn3"></div>
+            	</div>
+            </div>
+            <!-- Các button -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label> 
+                <label for="radio2" class="manual-btn"></label> 
+                <label for="radio3" class="manual-btn"></label> 
+            </div>
+        </div>
+		<!-- Hết phần banner -->
+
+		<!-- Phần sản phẩm -->
+		<!-- List chức năng -->
+		<div class="section">
+			<div class="section-content">
+				<div class="section-left">
+					<button class="left-btn">Khoảng giá</button>
+					<div class="list-checkbox" style="height: 230px";>
+						<ul>
+							<!-- 1 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Tất cả</span>
+								</label>
+							</li>
+							<!-- 2 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Nhỏ hơn 2,000,000₫</span>
+								</label>
+							</li>
+							<!-- 3 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Từ 2,000,000₫ - 5,000,000₫</span>
+								</label>
+							</li>
+							<!-- 4 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Từ 5,000,000₫ - 10,000,000₫</span>
+								</label>
+							</li>
+							<!-- 5 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Từ 10,000,000₫ - 20,000,000₫</span>
+								</label>
+							</li>
+							<!-- 6 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Từ 20,000,000₫ - 30,000,000₫</span>
+								</label>
+							</li>
+							<!-- 7 -->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Lớn hơn 30,000,000₫</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<button class="left-btn">Thương hiệu</button>
+					<div class="list-checkbox" style="height: 65px";>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Dongsuh Furniture</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Tất cả</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<button class="left-btn">Loại sản phẩm</button>
+					<div class="list-checkbox" style="height: 225px";>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Sofa</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Bàn</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Kệ & tủ TV</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Kệ trang trí</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Giường ngủ</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Sell off</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Tất cả</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<button class="left-btn">Vật liệu</button>
+					<div class="list-checkbox" style="height: 100px";>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>Gỗ</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>MDF</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>MFC</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<button class="left-btn">Kích cỡ</button>
+					<div class="list-checkbox" style="height: 130px";>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>1 Người</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>2 Người</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>3 Người</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>4 Người</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- List sản phẩm -->
+				<div class="section-right">
+					<h2>Các sản phẩm nổi bật</h2>
+					<div class="right-bot">
+						<div class="list-product">
+							<!-- 1 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t1.png" width="100%" height="200">
+									<h3 class="title">Bonita</h3>
+									<p class="txt-color">3 màu sắc</p>
+									<p></p>
+									<p>Giường Alma</p>
+									<div class="price">
+										<a href="">Từ 13.000.000 ₫ - 15.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 2 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t2.png" width="100%" height="200">
+									<h3 class="title">Lovis</h3>
+									<p class="txt-color">1 màu sắc</p>
+									<p></p>
+									<p>Giường Lovis</p>
+									<div class="price">
+										<a href="">25.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 3 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t3.png" width="100%" height="200">
+									<h3 class="title">Abilene</h3>
+									<p class="txt-color">1 màu sắc</p>
+									<p></p>
+									<p>Giường Abilene</p>
+									<div class="price">
+										<a href="">Từ 16.500.000 ₫ - 18.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 4 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t4.png" width="100%" height="200">
+									<h3 class="title">Emerson</h3>
+									<p class="txt-color">2 màu sắc</p>
+									<p></p>
+									<p>Sofa góc Emerson</p>
+									<div class="price">
+										<a href="">30.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 5 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t5.png" width="100%" height="200">
+									<h3 class="title">Alexandra</h3>
+									<p class="txt-color">1 màu sắc</p>
+									<p></p>
+									<p>Sofa Alexandra 3 chỗ</p>
+									<div class="price">
+										<a href="">15.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 6 -->
+							<div class="list-box">
+								<a href="./ctsanpham.html">
+									<img src="./image/t6.png" width="100%" height="200">
+									<h3 class="title">Amery</h3>
+									<p class="txt-color">2 màu sắc</p>
+									<p></p>
+									<p>Sofa Amery 4 chỗ</p>
+									<div class="price">
+										<a href="">Từ 65.500.000 ₫ - 65.600.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 7 -->
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t7.png" width="100%" height="200">
+									<h3 class="title">Bergen</h3>
+									<p class="txt-color">1 màu sắc</p>
+									<p></p>
+									<p>Tủ thấp Bergen</p>
+									<div class="price">
+										<a href="">9.500.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 8 -->
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t8.png" width="100%" height="200">
+									<h3 class="title">Vigo</h3>
+									<p class="txt-color">5 màu sắc</p>
+									<p></p>
+									<p>Bàn cà phê Vigo</p>
+									<div class="price">
+										<a href="">5.500.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 9 -->
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t9.png" width="100%" height="200">
+									<h3 class="title">Doha</h3>
+									<p class="txt-color">2 màu sắc</p>
+									<p></p>
+									<p>Tủ TV Doha</p>
+									<div class="price">
+										<a href="">7.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 10 -->
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t10.png" width="100%" height="200">
+									<h3 class="title">Grand Metro Matt</h3>
+									<p class="txt-color">1 màu sắc</p>
+									<p></p>
+									<p>Đèn trùm Grand Metro Matt</p>
+									<div class="price">
+										<a href="">5.900.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<!-- 11 -->
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t11.png" width="100%" height="200">
+									<h3 class="title">Leaf Mirror</h3>
+									<p class="txt-color">màu sắc</p>
+									<p></p>
+									<p>Tranh in Leaf Mirror</p>
+									<div class="price">
+										<a href="">10.000.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+							<div class="list-box">
+								<a href="">
+									<img src="./image/t12.png" width="100%" height="200">
+									<h3 class="title">Ball Bristol</h3>
+									<p class="txt-color">10 màu sắc</p>
+									<p></p>
+									<p>Đèn trần trang trí Ball Bristol</p>
+									<div class="price">
+										<a href="">Từ 1.540.000 ₫ - 3.400.000 ₫</a>
+										<img src="./image/heart.png" width="21" height="20">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Xem thêm -->
+			<div class="xemthem">
+				<div class="btn">
+					<a href="" style="color: #ffcc00;">Xem Thêm</a>
+				</div>
+			</div>
+		</div>
+		<div class="soc">
+			<div class="socngang"></div>
+		</div>
+		<!-- Title tin tức -->
+		<div class="list-new">
+			<div class="title-new">TIN TỨC LIÊN QUAN</div>
+		</div>
+		<!-- List tin tức -->
+		<div class="list-newhome">
+			<ul>
+				<!-- 1 -->
+				<li>
+					<a href="#">
+						<img src="https://decox.vn/upload/sanpham/thumbs/5-mau-ghe-thu-gian-khong-the-bo-qua-nam-2020.jpg" width="150">
+						<div class="mota">
+							<h3>5 mẫu ghế thư giãn không thể bỏ qua năm 2020</h3>
+							<p>Sau những giờ làm việc căng thẳng ở văn phòng, khi trở về nhà bạn mong chờ điều gì? Chắc hẳn là khoảng thời gian rảnh rỗi để thư giãn đúng không nào? Nếu bạn vẫn chưa có góc thư...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 2 -->
+				<li>
+					<a href="#">
+						<img src="./image/ha2.png" width="150">
+						<div class="mota">
+							<h3>Làm thế nào để chọn được gương nhà tắm phù hợp?</h3>
+							<p>Gương nhà tắm là một phần không thể thiếu trong mỗi gia đình. Không chỉ đáp ứng nhu cầu sử dụng hằng ngày, gương còn có tác dụng phản sáng cho không gian căn phòng trông rộng rãi hơn....</p>
+						</div>
+					</a>
+				</li>
+				<!-- 3 -->
+				<li>
+					<a href="#">
+						<img src="./image/ha5.png" width="150">
+						<div class="mota">
+							<h3>Khám phá mẫu bàn phòng khách kiểu Nhật HOT nhất</h3>
+							<p>Vừa có thể ngồi tiếp khách, họp mặt bạn bè, vừa có thể làm việc lại thích hợp để nghỉ ngơi chính là không gian mà mọi anh chàng hay cô nàng độc thân đều mơ đến. Để không gian...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 4 -->
+				<li>
+					<a href="#">
+						<img src="https://decox.vn/upload/sanpham/thumbs/phong-thuy-nam-mau-tuat-cho-12-con-giap.jpg" width="150">
+						<div class="mota">
+							<h3>Phong thủy năm Mậu Tuất cho 12 con giáp</h3>
+							<p>Có quá nhiều tình huống bất ngờ khiến người tuổi Tý bị hao hụt tài chính trong năm nay. Ngoài ra, khi di chuyển nhiều, đi du lịch phải cẩn thận nhất là sức khỏe không được đảm bảo,...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 5 -->
+				<li>
+					<a href="#">
+						<img src="./image/ha1.png" width="150">
+						<div class="mota">
+							<h3>Hiểu thêm về ánh sáng để có không gian hoàn hảo</h3>
+							<p>Phải mua đồ trang trí gì, phải sử dụng màu sắc như thế nào hợp lý có phải luôn là những câu hỏi bạn đặt ra khi bắt tay vào trang trí ngôi nhà mình? Đừng quên yếu tố ánh sáng vì nó...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 6 -->
+				<li>
+					<a href="#">
+						<img src="https://decox.vn/upload/sanpham/thumbs/treo-tranh-la-mot-nghe-thuat-ban-da-thu-chua.jpg" width="150">
+						<div class="mota">
+							<h3>Treo tranh là một nghệ thuật, bạn đã thử chưa?</h3>
+							<p>Sử dụng tranh treo tường để biến không gian quen thuộc trở nên đặc biệt là ý tưởng tuyệt vời mà bạn nên áp dụng cho không gian tổ ấm của mình. Những nơi lí tưởng mà bạn có thể...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 7 -->
+				<li>
+					<a href="#">
+						<img src="https://decox.vn/upload/sanpham/thumbs/man-nhan-voi-nhung-kieu-ban-sofa-mat-da-dep-khong-goc-chet.jpg" width="150">
+						<div class="mota">
+							<h3>Mãn nhãn với những kiểu bàn mặt đá đẹp không góc chết</h3>
+							<p>Khi bắt tay vào trang trí phòng khách, bạn nên suy nghĩ ngay đến chiếc bàn kết hợp cùng bộ sofa. Không chỉ đơn giản là sự tiện lợi, bàn sofa còn trở thành điểm nhấn quan trọng ở không...</p>
+						</div>
+					</a>
+				</li>
+				<!-- 8 -->
+				<li>
+					<a href="#">
+						<img src="./image/ha3.png" width="150">
+						<div class="mota">
+							<h3>Lối sống tối giản – Ngôi nhà nhỏ, hạnh phúc to</h3>
+							<p>Hạn chế đồ đạc tối đa, chỉ giữ lại những gì thật cần thiết, lối sống tối giản sẽ giúp ngôi nhà của bạn luôn gọn gàng. Và bạn sẽ có nhiều thời gian hơn để dành cho chính...</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Hết phần sản phẩm -->
+	</div>
+
+	<!-- Phần footer -->
+		<footer class="wrap-footer">
+			<div class="container-footer">
+				<div class="footer">
+					<div class="bot-footer">
+						<div class="item-footer">
+							<div class="item-left">
+								<div class="item-left-footer">
+									<div class="thongtin">
+										ABOUT US
+									</div>
+									<ul>
+										<li>
+											<a href="./lienhe.html">LIÊN HỆ</a>
+										</li>
+										<li>
+											<a href="">TUYỂN DỤNG</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										SẢN PHẨM
+									</div>
+									<ul>
+										<li>
+											<a href="">BÀN - tables</a>
+										</li>
+										<li>
+											<a href="">SOFA - sofas</a>
+										</li>
+										<li>
+											<a href="">GHẾ -chair</a>
+										</li>
+										<li>
+											<a href="">GƯƠNG - mirors</a>
+										</li>
+										<li>
+											<a href="">GIƯỜNG - beds</a>
+										</li>
+										<li>
+											<a href="">ĐÈN - lamps</a>
+										</li>
+										<li>
+											<a href="">BỘ SƯU TẬP - COLLECTIONS</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										CHÍNH SÁCH
+									</div>
+									<ul>
+										<li>
+											<a href="">VẬN CHUYỂN</a>
+										</li>
+										<li>
+											<a href="./tuvan.html">TƯ VẤN</a>
+										</li>
+										<li>
+											<a href="./baohanh.html">BẢO HÀNH</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-right">
+								<div class="thongtin">
+									THÔNG TIN LIÊN HỆ
+								</div>
+								<p class="item-right-footer">
+									Công ty TNHH Kiến trúc và Nội thất LENA DESIGN
+									GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1543_hm-1-e1590382297249.png" height="14.5" width="14.5">
+									97-99 Cộng Hoà, lầu 3, phường 4, quận Tân Bình, Hồ Chí Minh
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1541_kd-1.png" width="14.5" height="14.5"> 
+									028 6267 6466 - ‭0866757758
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1542_j-1.png" width="14.5" height="14.5"> support@lenadesignvn.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fusion-builer">
+                <ul>
+                    <li class="cach">Copyright 2021 by LNDesign Joint Stock Company. All rights reserved.</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/fb.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">Quảng cáo/ Thương hiệu – LNDesign</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/mail.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">support@lenadesignvn.com</li>
+                </ul>
+			</div>
+			<div style="width: 100%; background-color: #dadada; height: 30px;"></div>
+		</footer>
+		<a href="" class="on-top" id="myBtn">
+			<img src="./image/back-top.png">
+		</a>
+		<!-- Hết phần footer -->
+	<script type="text/javascript" src="./js/ontop.js"></script>
+	<script type="text/javascript" src="./js/drop-down-timkiem.js"></script>
+	<script type="text/javascript" src="./js/slide-show.js"></script>
+</body>
+</html>

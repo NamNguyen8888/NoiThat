@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="trangchu.css">
+	<title>Trang chủ</title>
+</head>
+<body>
+	<!-- Phần header -->
+    <header class="fixed">
+        <div class="sub-header">
+            <ul class="sub-container social">
+                <p> Hotline: +84 (28) 391 44 309</p>
+            </ul>
+            <ul class="sub-container user">
+                <li class="icon">
+                    <img src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png" width="20" height="20">
+                </li>
+                <li class="login-resignter" style="color: white;">
+                    <a href="./dangnhap.html">Đăng nhập</a>
+                    /
+                    <a href="./dangky.html">Đăng ký</a>
+                </li>
+                <li class="icon">
+                    <a href="./giohang.html">
+                        <img src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png" width="21" height="22">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-container2">
+            <div class="sub-content">
+                <div class="content-img">
+                    <a href="./trangchu.html">
+                        <img src="https://lndesign.com.vn/wp-content/uploads/2020/09/logo-moi-2.png" height="65">
+                    </a>
+                </div>
+                <div class="content-list">
+                    <ul>
+                        <li>
+                           <a href="#">
+                                <img onclick="openSearch()" src="./image/search.png" width="23" height="23">
+                            </a>
+                            <!-- Hiện ra tìm kiếm -->
+                            <div id="myOverlay" class="overlay" style="display: none;">
+                                <span class="closebtn" onclick="closeSearch()">×</span>
+                                <div class="overlay-content">
+                                <form>
+                                    <input type="text" placeholder="Tìm Kiếm" name="search">
+                                    <button type="submit" style="width: 230px;height: 50px;">Xem tất cả các kết quả</button>
+                                </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./tintuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="./thietke.html">Thiết kế</a>
+                        </li>
+                        <li>
+                            <a href="./gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <div class="drop-down2">
+                                <a class="nut_dropdown">Sản phẩm</a>
+                                <div class="noidung_dropdown">
+                                    <a href="./sanpham.html">Sofa</a>
+                                    <a href="./sanpham.html">Bàn</a>
+                                    <a href="./sanpham.html">Ghế</a>
+                                    <a href="./sanpham.html">Giường</a>
+                                    <a href="./sanpham.html">Tủ</a>
+                                    <a href="./sanpham.html">Sale off</a>
+                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./trangchu.html">Trang chủ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hết phần header -->
+
+	<!-- Phần body -->
+	<div class="main-contain">
+        <!-- Phần banner slideshow -->
+		<div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- Các slide ảnh -->
+                <div class="slide first">
+                    <img src="./image/hinh3.png" style="width: 100%">
+                </div>
+                <div class="slide">
+                    <img src="./image/hinh2.png" style="width: 100%;">
+                </div>
+                <div class="slide">
+                    <img src="./image/hinh1.png" style="width: 100%;">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                 </div>
+            </div>
+            <!-- Button -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label> 
+                <label for="radio2" class="manual-btn"></label> 
+                <label for="radio3" class="manual-btn"></label> 
+            </div>
+        </div>
+        <!-- Hết phần banner slideshow -->
+        
+        <!-- Phần thứ nhất -->
+        <div class="section-1">
+        	<div class="container-1">
+        		<div class="container-row">
+        			<img class="image" src="./image/hinhanh1.png" style="width: 100%; height: 85%;">
+        			<h2><a href="" style="color: #ffcc00; font-weight: 500;">SOFA</a></h2>
+        			<a href="">
+        				<div class="middle">
+        					<div class="middle-txt1">SOFA</div>
+        					<div class="middle-txt2">Tìm hiểu thêm <span>&rarr;</span></div>
+        				</div>
+        			</a>
+        		</div>
+        		<div class="container-row">
+        			<img class="image" src="./image/hinhanh2.png" style="width: 100%; height: 85%;">
+        			<h2><a href="" style="color: #ffcc00; font-weight: 500;">GHẾ</a></h2>
+        			<a href="">
+        				<div class="middle">
+        					<div class="middle-txt1">GHẾ</div>
+        					<div class="middle-txt2">Tìm hiểu thêm <span>&rarr;</span></div>
+        				</div>
+        			</a>
+        		</div>
+        		<div class="container-row">
+        			<img class="image" src="./image/hinhanh3.png" style="width: 100%; height: 85%;">
+        			<h2><a href="" style="color: #ffcc00; font-weight: 500;">BÀN</a></h2>
+        			<a href="">
+        				<div class="middle">
+        					<div class="middle-txt1">BÀN</div>
+        					<div class="middle-txt2">Tìm hiểu thêm <span>&rarr;</span></div>
+        				</div>
+        			</a>
+        		</div>
+        		<div class="container-row">
+        			<img class="image" src="./image/hinhanh4.png" style="width: 100%; height: 85%;">
+        			<h2><a href="" style="color: #ffcc00; font-weight: 500;">GIƯỜNG</a></h2>
+        			<a href="">
+        				<div class="middle">
+        					<div class="middle-txt1">GIƯỜNG</div>
+        					<div class="middle-txt2">Tìm hiểu thêm <span>&rarr;</span></div>
+        				</div>
+        			</a>
+        		</div>
+        	</div>
+        </div>
+        <!-- Hết phần thứ nhất -->
+
+        <!-- Phần thứ hai -->
+        <div class="section-2">
+            <div class="section-2-bot">
+                <div class="bot-left">
+                    <h3>GIỚI THIỆU VỀ LENA DESIGN</h3>
+                    <p>Được thành lập với mong muốn mang đến những căn nhà hiện đại, tinh tế và giàu chất kiến trúc nhất cho quý khách hàng, <strong>LENA DESIGN</strong> đã và đang  mang đến cho bạn những mẫu thiết kế và thi công mới nhất phù hợp với xu hướng kiến trúc hiện đại và không gian sử dụng thực tế nhất.</p>
+                    <div class="dv-txt">
+                        <p>Hơn 100 dự án thiết kế kiến trúc nhà ở cũng như thiết kế biệt thự đã ra đời từ sự sáng tạo và các sản phẩm nội thất đảm bảo chất lượng. Không những thế đội ngũ kiến trúc sư và kinh nghiệm của đội ngũ tư vấn-thi công để mang đến sự hài lòng cho quý khách hàng và cho chính chúng tôi khi thẩm định sản phẩm của mình.</p>
+                    </div>
+                    <p>Yếu tố truyền thống của người Việt ta trong xây dựng nhà như phong thủy luôn được chú trọng để tạo ra các kiến trúc hài hòa và ấn tượng nhất đến cho người ở. Mỗi căn nhà là cả một công trình kiến trúc với phối cảnh độc đáo, cách thiết kế nội thất trí, sản phẩm hợp lý và thực dụng tối đa đi cùng kỹ năng thi công đáng tin cậy. Rất nhiều yếu tố đòi hỏi kỹ năng chuyên sâu và sự đầu tư nghiêm túc về thời gian, trí tuệ. Hãy để chúng tôi song hành cùng quý vị trên con đường này.</p>
+                </div>
+                <div class="bot-right">
+                    <img src="http://pokedecor.vn/images/stores/2014/08/28/tu-go-phong-khach-dep.jpg" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        <!-- Hết phần thứ hai -->
+
+        <!-- Phần thứ ba -->
+        <div class="fusion-3">
+            <h1>TỔNG HỢP HƠN 500 MẪU THIẾT KẾ CỦA LENA DESIGN</h1>
+            <div class="section-3">
+                <div class="section-3-bot">
+                    <div class="list-product">
+                        <!-- 1 -->
+                        <div class="list-box">
+                            <a href="#"><img src="./image/ha1.png" width="100%" height="57%"></a>
+                            <div class="content-box">
+                                <h3>NỘI THẤT CĂN HỘ SUNSHINE GARDEN</h3>
+                                <p>- Thời gian thi công: 25 ngày</p>
+                                <p>- Căn hộ: 1 phòng khách, 1 phòng bếp, 3 phòng ngủ</p>
+                                <p>- Phong cách thiết kế: hiện đại, sang trọng, gỗ An Cường</p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="list-box">
+                            <a href="#"><img src="./image/ha7.png" width="100%" height="57%"></a>
+                            <div class="content-box">
+                                <h3>CĂN HỘ VINHOME OCEAN PARK GIA LÂM.</h3>
+                                <p>- Thời gian thi công: 25 ngày.</p>
+                                <p>- Diện tích: 130m2.</p>
+                                <p>- Căn hộ: 1 phòng khách, 3 phòng ngủ.</p>
+                                <p>- Phong cách thiết kế: hiện đại, sang trọng với tông màu trầm giúp cho căn hộ ấm áp hơn.</p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="list-box">
+                            <a href="#"><img src="./image/ha3.png" width="100%" height="57%"></a>
+                            <div class="content-box">
+                                <h3>NỘI THẤT CĂN HỘ SUNSHINE GARDEN.</h3>
+                                <p>- Thời gian thi công: 25 ngày.</p>
+                                <p>- Căn hộ: 1 phòng khách, 1 phòng bếp, 3 phòng ngủ.</p>
+                                <p>- Phong cách thiết kế: hiện đại, sang trọng, gỗ An Cường.</p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="list-box">
+                            <a href="#"><img src="./image/ha9.png" width="100%" height="57%"></a>
+                            <div class="content-box">
+                                <h3>CĂN HỘ SUNSHINE CITY, KHU ĐÔ THỊ CIPUTRA.</h3>
+                                <p>- Thời gian thi công: 30 ngày.</p>
+                                <p>- Diện tích: 120m2.</p>
+                                <p>- Căn hộ: 1 phòng khách, 3 phòng ngủ.</p>
+                                <p>- Phong cách thiết kế: thiết kế theo phong Color Block.</p>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="list-box">
+                            <a href="#"><img src="./image/ha8.png" width="100%" height="57%"></a>
+                            <div class="content-box">
+                                <h3>NỘI THẤT CĂN HỘ SUNRISE RIVERSIDE.</h3>
+                                <p>- Thời gian thi công: 30 ngày.</p>
+                                <p>- Diện tích: 72m2.</p>
+                                <p>- Căn hộ: 1 phòng khách, 2 phòng ngủ.</p>
+                                <p>- Phong cách thiết kế: đem đến nguồn ánh sáng tự nhiên hoàn hảo.</p>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="list-box">
+                            <img src="./image/ha6.png" width="100%" height="57%">
+                            <div class="content-box">
+                                <h3>NỘI THẤT CĂN HỘ ECO GREEN.</h3>
+                                <p>- Thời gian thi công: 35 ngày.</p>
+                                <p>- Diện tích: 67m2.</p>
+                                <p>- Căn hộ: 1 phòng khách, 1 phòng bếp, 3 phòng ngủ.</p>
+                                <p>- Phong cách thiết kế: hiện đại.</p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hết phần thứ ba -->
+
+        <!-- Phần thứ tư -->
+        <div class="section-4">
+            <div class="section-4-bot">
+                <div class="list-col33">
+                    <img src="./image/4-1.png">
+                    <h4>SANG TRỌNG - ĐẲNG CẤP</h4>
+                    <p>Tất cả các phong cách thiết kế của Klever House đều nhận được vô số lời khen ngợi từ khách hàng về sự đẳng cấp, không pha trộn, lai tạp mà toát lên sự sang trọng, ăn khớp tới từng chi tiết nhỏ trong một công trình.</p>
+                </div>
+                <div class="list-col33">
+                    <img src="./image/4-2.png">
+                    <h4>Đội ngũ KTS tài hoa</h4>
+                    <p>100% kiến trúc sư tay nghề được đào tạo từ những trường Đại học hàng đầu ở trong nước. Tất cả các kiến trúc sư đều có từ 10 năm kinh nghiệm trở nên và đều có kinh nghiệm làm việc nhiều công trình lớn tại các dự án Vinhomes, Stalake, Ciputra …</p>
+                </div>
+                <div class="list-col33">
+                    <img src="./image/4-3.png">
+                    <h4>Thi công tay nghề</h4>
+                    <p>Toàn bộ quá trình thi công được thực hiện bởi đội ngũ nhân sự nhiệt huyết, tay nghề, chuyên nghiệp và được giám sát chặt chẽ trong cả quá trình. Đội ngũ thi công cũng là những người thấu hiểu những ý tưởng của KTS, thực hiện ý tưởng một cách bài bản, hài hòa và đặc sắc nhất.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Hết phần thứ tư -->
+
+        <!-- Phần thứ năm -->
+        <div class="section-5">
+			<h1>VÌ SAO CHỌN LENADESIGN</h1>
+			<div class="fusion-layout">
+				<div class="layout-left">
+					<div class="unit">
+						<strong class="left-strong">3000+</strong> 
+						<span class="left-span">khách hàng,</span>
+					</div>
+					<div class="unit">
+						<strong class="left-strong">5000+</strong> 
+						<span class="left-span">dự án đã hoàn thành,</span>
+					</div>
+					<div class="unit">
+						<strong class="left-strong">50</strong> 
+						<span class="left-span">nhân tài trong lĩnh vực chuyên môn</span>
+					</div>
+				</div>
+				<div class="layout-right">
+					<p class="unit">
+						<span>
+							<strong class="right-strong">1. Chất lượng sản phẩm</strong>
+						</span>
+					</p>
+					<p class="unit right-p">Tập trung vào những sản phẩm mang tính chất đột phá và phù hợp với nhu cầu người dùng</p>
+					<p class="unit">
+						<span>
+							<strong class="right-strong">2. Ý tưởng sáng tạo</strong>
+						</span>
+					</p>
+					<p class="unit right-p">Luôn cập nhật và tạo ra những mẫu thiết kế độc đáo mới mẻ dẫn đầu xu hướng</p>
+					<p class="unit">
+						<span>
+							<strong class="right-strong">3. Đội ngũ chuyên nghiệp</strong>
+						</span>
+					</p>
+					<p class="unit right-p">Sở hữu bộ máy nhân sự chuyên môn cao, dày dạn kinh nghiệm, đón đầu xu hướng trong thị trường khẳng định sự khác biệt đẳng cấp</p>
+					<p class="unit">
+						<span>
+							<strong class="right-strong">4. Uy tín hàng đầu</strong>
+						</span>
+					</p>
+					<p class="unit right-p">Thương hiệu trẻ khẳng định dấu ấn, tâm huyết trong từng sản phẩm</p>
+					<p class="unit">
+						<span>
+							<strong class="right-strong">5. Đảm bảo sự hài lòng của khách hàng</strong>
+						</span>
+					</p>
+					<p class="right-p">Sự hài lòng là động lực phát triển cho LENADESIGN</p>
+				</div>
+			</div>
+		</div>
+        <!-- Hết phần thứ năm -->
+
+        <!-- Phần thứ sáu -->
+        <div class="section-6">
+        	<div class="sub-section">
+        		<div class="sub-item">
+        			<div class="sub-item-img"><img src="./image/email_icon.png" width="55" height="55"></div>
+        			<p class="desc">Đăng ký và nhận ngay ưu đãi hấp dẫn tại LENA DESIGN!</p>
+        			<form class="login-form" action="trangchu.html" method="post" name="form" onsubmit="return validated()">
+        				<input autocomplete="off" type="text" name="email" placeholder="Email của bạn...">
+        				<button type="submit"><a href="./trangchu.html">ĐĂNG KÝ</a></button>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+        <!-- Hết phần thứ sáu -->
+	</div>
+	<!-- Hết phần body -->
+
+	<!-- Phần footer -->
+		<footer class="wrap-footer">
+			<div class="container-footer">
+				<div class="footer">
+					<div class="bot-footer">
+						<div class="item-footer">
+							<div class="item-left">
+								<div class="item-left-footer">
+									<div class="thongtin">
+										ABOUT US
+									</div>
+									<ul>
+										<li>
+											<a href="./lienhe.html">LIÊN HỆ</a>
+										</li>
+										<li>
+											<a href="">TUYỂN DỤNG</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										SẢN PHẨM
+									</div>
+									<ul>
+										<li>
+											<a href="">BÀN - tables</a>
+										</li>
+										<li>
+											<a href="">SOFA - sofas</a>
+										</li>
+										<li>
+											<a href="">GHẾ -chair</a>
+										</li>
+										<li>
+											<a href="">GƯƠNG - mirors</a>
+										</li>
+										<li>
+											<a href="">GIƯỜNG - beds</a>
+										</li>
+										<li>
+											<a href="">ĐÈN - lamps</a>
+										</li>
+										<li>
+											<a href="">BỘ SƯU TẬP - COLLECTIONS</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										CHÍNH SÁCH
+									</div>
+									<ul>
+										<li>
+											<a href="">VẬN CHUYỂN</a>
+										</li>
+										<li>
+											<a href="./tuvan.html">TƯ VẤN</a>
+										</li>
+										<li>
+											<a href="./baohanh.html">BẢO HÀNH</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-right">
+								<div class="thongtin">
+									THÔNG TIN LIÊN HỆ
+								</div>
+								<p class="item-right-footer">
+									Công ty TNHH Kiến trúc và Nội thất LENA DESIGN
+									GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1543_hm-1-e1590382297249.png" height="14.5" width="14.5">
+									97-99 Cộng Hoà, lầu 3, phường 4, quận Tân Bình, Hồ Chí Minh
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1541_kd-1.png" width="14.5" height="14.5"> 
+									028 6267 6466 - ‭0866757758
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1542_j-1.png" width="14.5" height="14.5"> support@lenadesignvn.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fusion-builer">
+                <ul>
+                    <li class="cach">Copyright 2021 by LNDesign Joint Stock Company. All rights reserved.</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/fb.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">Quảng cáo/ Thương hiệu – LNDesign</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/mail.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">support@lenadesignvn.com</li>
+                </ul>
+			</div>
+			<div style="width: 100%; background-color: #dadada; height: 30px;"></div>
+		</footer>
+		<a href="" class="on-top" id="myBtn">
+			<img src="./image/back-top.png">
+		</a>
+		<!-- Hết phần footer -->
+		<script type="text/javascript" src="./js/ontop.js"></script>
+        <script type="text/javascript" src="./js/drop-down-timkiem.js"></script>
+        <script type="text/javascript" src="./js/slide-show.js"></script>
+</body>
+</html>

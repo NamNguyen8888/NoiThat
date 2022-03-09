@@ -1,0 +1,711 @@
+* {margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+	 user-select: none;
+}
+body {
+	font-size: 17px;
+	background-color: white;
+	font-family: serif, "Tinos";
+  min-width: 100%;
+	position: absolute;
+}
+a {
+	text-decoration: none;
+	color: rgb(58, 57, 57);
+	cursor: pointer;
+}
+ul{list-style-type: none;}
+/*Phần header*/
+.fixed {
+	position: fixed;z-index: 10000;top: 0px;width: 100%;
+}
+.sub-header {
+	width: 100%;
+	height: 50px;
+	background: #1E1E1E;
+}
+.sub-container {
+    width: 100%;
+    height: auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+}
+.social {
+    float: left;
+    width: 420px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sub-container p {
+	color: #a0a0a0;
+	font-size: 15px;
+}
+.user {
+    float: right;
+    text-align: right;
+    width: 700px;
+}
+.login-resignter {
+    margin: 17px 0 15px 0;
+}
+.login-resignter a {
+	color: white;
+	text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-resignter a:hover {
+	color: #ffcc00;
+}
+.icon {
+	margin: 15px 15px 15px;
+}
+.sub-container2 {
+	width: 100%;
+    height: auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    background-color: rgba(79,79,79,.68);
+}
+.sub-content {
+	max-width: 100%;
+	height: 100px;
+	display: flex;
+}
+.content-img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.content-list {
+	width: 100%;
+}
+.content-list ul li {
+	float: right;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 100px;
+}
+.content-list ul li a {
+	font-size: 23px;
+	color: #ffcc00;
+	font-family: 'UTM AVO';
+}
+/*Dropdown tìm kiếm*/
+.content-list img {
+  margin-top: 37.5px;
+}
+.overlay {
+    height: 200px;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F9F9F9;
+    margin-top: 150px;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 60px;
+    cursor: pointer;
+    color: black;
+}
+.overlay-content {
+    position: relative;
+    width: 1140px;
+    height: 200px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    padding: 0 15px 0 15px;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 23px;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #B8B9B8;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+.overlay button {
+    width: 20%;
+    padding: 15px;
+    background-color: #232323;
+    color: white;
+    font-size: 17.5px;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+  margin-left: auto;
+}
+/*dropdown menu sản phẩm*/
+.drop-down2 {
+    position: relative;
+   display: inline-block;
+}
+.nut_dropdown {
+   color: white;
+   font-size: 16px;
+   border: none;
+ }
+.noidung_dropdown {
+/*Ẩn nội dung các đường dẫn sản phẩm*/
+   display: none;
+   position: absolute;
+   min-width: 120px;
+   margin-top: -2px;
+   margin-left: -15px;
+   background-color: rgba(79,79,79,.68);
+   z-index: 10;
+ }
+/* Thiết kế style cho các đường dẫn trong Dropdown sản phẩm */
+.noidung_dropdown a {
+    text-align: center;
+    height: 65px;
+    display: block;
+    line-height: 65px;
+ }
+ .noidung_dropdown2 {
+/*Ẩn nội dung các đường dẫn*/
+   display: none;
+   position: absolute;
+   min-width: 120px;
+   margin-top: -2px;
+   margin-left: -15px;
+   background-color: rgba(79,79,79,.68);
+   z-index: 10;
+ }
+/* Thiết kế style cho các đường dẫn trong Dropdown */
+.noidung_dropdown2 a {
+    text-align: center;
+    height: 65px;
+    display: block;
+    line-height: 65px;
+ }
+.noidung_dropdown a:hover {background-color: #d7d6d6;}
+/* hiển thị nội dung dropdown khi hover */
+.drop-down2:hover .noidung_dropdown {display: block;}
+/* Thay đổi màu background cho nút khi được hover */
+.drop-down2:hover .nut_dropdown {background-color: none;}
+/*Hết phần header*/
+
+/*Phần body*/
+.main-contain {
+	width: 100%;
+	box-sizing: border-box;
+}
+/*Phần banner*/
+.slider{
+    width: 100%;
+    height: 550px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.slides{
+	width: 500%;
+    height: 550px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width:  20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 550px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: auto;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #FFCC00;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+.navigation-auto div{
+    border: 2px solid #e85933;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-left: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #e85933;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #e85933;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #e85933;
+}
+/*Hết phần banner*/
+
+/*Phần thứ nhất*/
+.section-1 {
+	width: 100%;
+	height: 650px;
+	padding-top: 75px;
+}
+.container-1 {
+	width: 1150px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+.container-row {
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 89%;
+}
+.image {
+	display: block;
+  	width: 100%;
+}
+.container-row:hover .image {
+ 	opacity: 0.8;
+  	cursor: pointer;
+}
+
+.container-row:hover .middle {
+  opacity: 1;
+}
+.middle-txt1 {
+	width: 100%;
+	height: 30px;
+	color: #ffcc00;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: "Tinos", serif;
+	letter-spacing: 0.5px;
+}
+.middle-txt2 {
+	width: 100%;
+	height: 30px;
+	transition: width 2s;
+  font-family: "Tinos", serif;
+	color: white;
+}
+.container-row h2 {
+	text-align: center;
+	margin-top: 25px;
+	letter-spacing: 1.5px;
+  font-family: "Tinos", serif;
+	color: #ffcc00;
+}
+/*Hết phần thứ nhất*/
+
+/*Phần thứ hai*/
+.section-2 {
+  width: 100%;
+  height: 525px;
+  margin-top: 45px;
+}
+.section-2-bot {
+  width: 1180px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  padding: 20px 15px 0 15px;
+}
+.bot-left {
+  width: 50%;
+  height: 100%;
+  padding: 0 15px 0 15px;
+  text-align: justify;
+  font-family: "Tinos", serif;
+}
+.bot-left h3 {
+  font-size: 24px;
+  color: #ffcc00;
+}
+.bot-left p {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 16.5px;
+}
+.bot-left strong {
+  color: #ffcc00;
+}
+.dv-txt {
+  width: 100%;
+  height: 170px;
+  padding: 20px 25px 20px 25px;
+  background: #f9f9f9;
+  margin-top: 20px;
+}
+.dv-txt p {
+  margin: 0;
+}
+.bot-right {
+  width: 50%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*Hết phần thứ hai*/
+
+/*Phần thứ ba*/
+.fusion-3 {
+  background: #F7F7F7;
+  margin-top: 75px;
+}
+.fusion-3 h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  font-family: "Tinos", serif;
+    color: #ffcc00;
+    font-weight: bold;
+}
+.section-3 {
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto; 
+  display: flex;
+  background: #F7F7F7; 
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section-3-bot {
+  width: 100%;
+  height: 100%;
+}
+.section-3 .section-3-bot .list-product {
+  float: left;
+}
+.section-3 .section-3-bot .list-product .list-box {
+  width: 33.33333%;
+    float: left;
+    height: 460px;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+.section-3 .section-3-bot .list-product .list-box img {
+  border-radius: 10px;
+}
+.content-box {
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.content-box h3 {
+  color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.content-box p {
+  line-height: 1.4;
+  font-size: 17px;
+}
+/*Hết phần thứ ba*/
+
+/*Phần thứ tư*/
+.section-4 {
+  width: 100%;
+  height: 425px;
+  margin-top: 50px;
+}
+.section-4-bot {
+  width: 1150px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+}
+.section-4 .section-4-bot .list-col33 img {
+  padding-top: 25px;
+}
+.list-col33 {
+  width: 33.33333%;
+  height: auto;
+  margin: 0 20px 0 20px;
+  border: 1px solid rgb(235, 232, 232);
+  box-shadow: 0 0 5px 1px rgb(238 221 221);
+  border-radius: 5px;
+}
+.list-col33 h4 {
+  font-size: 22.5px;
+  margin-top: 40px;
+  color: bold;
+  font-weight: bold;
+}
+.list-col33 p {
+  font-size: 20px;
+    line-height: 25px;
+    color: #b6b6b6;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+/*Hết phần thứ tư*/
+
+/*Hết phần thứ năm*/
+.section-5 {
+  width: 100%;
+    height: 630px;
+  background: #F7F7F7; 
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.section-5  h1 {
+  color: #ffcc00;
+  text-align: center;
+  letter-spacing: 2.3px;
+  font-family: serif, "Tinos";
+}
+.fusion-layout {
+  width: 1150px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+.layout-left {width: 50%;
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.unit {margin-bottom: 20px;}
+.left-strong {
+  font-size: 30pt;
+  opacity: 0.8;
+}
+.left-span{
+  font-size: 20px;
+  opacity: 0.5;
+}
+.layout-right {width: 50%;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;
+  overflow: visible;
+}
+.right-strong {font-size: 15.5pt;}
+.right-p {
+  font-size: 13.5pt;
+  opacity: 0.6;
+}
+/*Hết phần thứ năm*/
+
+/*Phần thứ sáu*/
+.section-6 {
+	width: 100%;
+}
+.sub-section {
+	width: 1150px;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sub-item {
+	max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.sub-item-img img {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+}
+.desc {
+	margin: 20px 0 20px;
+}
+.sub-item p {
+	font-size: 25px;
+	font-weight: 700;
+	color: #ffcc00;
+}
+.login-form {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	margin-top: 30px;
+}
+.login-form input {
+    height: auto;
+    width: 30%;
+    padding-left: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 0;
+    border: 1px solid;
+}
+.login-form button {
+    height: auto;
+    width: 20%;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(79,79,79,.68);
+    border-radius: 3px;
+    border: 1px solid #3949AB;
+    transition: .5s;
+}
+.login-form button a {
+	 color: #ffcc00;
+	 font-size: 18px;
+}
+/*Hết phần thứ sáu*/
+
+/*Phần footer*/
+footer.wrap-footer .container-footer .footer {
+  height: 340px;
+  margin-top: 30px;
+  background-color: #dadada;
+}
+
+footer.wrap-footer .container-footer .footer .bot-footer {
+  width: 1250px;
+  height: 300px;
+  margin: auto;
+}
+
+footer.wrap-footer .container-footer .footer .bot-footer .item-footer {
+  display: flex;
+  height: 100%;
+}
+
+.item-left {
+  overflow: visible;
+  display: flex;
+  width: 66.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+
+.item-left-footer {
+  width: 33.33333%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.thongtin {
+  margin-bottom: 20px;
+  font-size: 22.5px;
+  font-weight: 500;
+  z-index: 1;
+  color: #434343;
+}
+
+.item-left-footer ul li {
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.item-left-footer a:hover {
+  color: #ffcc00;
+  font-size: 15.5;
+}
+
+.item-right {
+  overflow: visible;
+  width: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+
+.item-right-footer {
+  overflow: hidden;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.fusion-builer {
+  height: 65px;
+  line-height: 65px;
+  margin-right: 10px;
+}
+.fusion-builer ul {
+  display: inline-flex;
+}
+.fusion-builer ul li {
+  list-style-type: none;
+  color: rgb(58, 57, 57);
+}
+.cach {
+  padding-left: 20px;
+}
+.on-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 99;
+  color: white;
+}
+.on-top img {
+  text-align: center;
+}
+/*Hết phần footer*/

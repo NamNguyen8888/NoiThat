@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="tintuc.css">
+	<meta charset="utf-8">
+	<title>Tin tức</title>
+</head>
+<body>
+	<!-- Phần header -->
+	<header class="fixed">
+		<div class="sub-header">
+			<ul class="sub-container social">
+				<p> Hotline: +84 (28) 391 44 309</p>
+			</ul>
+			<ul class="sub-container user">
+				<li class="icon">
+					<img src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png" width="20" height="20">
+				</li>
+				<li class="login-resignter" style="color: white;">
+					<a href="./dangnhap.html">Đăng nhập</a>
+					/
+					<a href="./dangky.html">Đăng ký</a>
+				</li>
+				<li class="icon">
+					<a href="./giohang.html">
+						<img src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png" width="21" height="22">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sub-container2">
+			<div class="sub-content">
+				<div class="content-img">
+					<a href="./trangchu.html">
+						<img src="https://lndesign.com.vn/wp-content/uploads/2020/09/logo-moi-2.png" height="65">
+					</a>
+				</div>
+				<div class="content-list">
+					<ul>
+						<li>
+							<a href="#">
+								<img onclick="openSearch()" src="./image/search.png" width="23" height="23">
+							</a>
+							<!-- Hiện ra tìm kiếm -->
+							<div id="myOverlay" class="overlay" style="display: none;">
+								<span class="closebtn" onclick="closeSearch()">×</span>
+								<div class="overlay-content">
+								<form>
+									<input type="text" placeholder="Tìm Kiếm" name="search">
+									<button type="submit" style="width: 230px;height: 50px;">Xem tất cả các kết quả</button>
+								</form>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./tintuc.html">Tin tức</a>
+						</li>
+						<li>
+							<a href="./thietke.html">Thiết kế</a>
+						</li>
+						<li>
+							<a href="./gioithieu.html">Giới thiệu</a>
+						</li>
+						<li>
+							<div class="drop-down2">
+   								<a class="nut_dropdown">Sản phẩm</a>
+   								<div class="noidung_dropdown">
+     								<a href="./sanpham.html">Sofa</a>
+     								<a href="./sanpham.html">Bàn</a>
+     								<a href="./sanpham.html">Ghế</a>
+     								<a href="./sanpham.html">Giường</a>
+     								<a href="./sanpham.html">Tủ</a>
+     								<a href="./sanpham.html">Sale off</a>
+  								 </div>
+ 							</div>
+						</li>
+						<li>
+							<a href="./trangchu.html">Trang chủ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Hết phần header -->
+
+	<!-- Phần body -->
+	<div class="main-contain">
+		<!-- Phần quảng cáo -->
+		<div class="slideshow">
+			<img src="https://aconcept-vn.com/assets/images/tin-tuc.jpg" width="100%" height="500">
+		</div>
+		<!-- Hết phần quảng cáo -->
+
+		<div class="container-body">
+			<div class="content">
+				<!-- Cột bên trái -->
+				<div class="row-left">
+					<!-- Phần thứ nhất -->
+					<div class="title-heading">
+						<p>TIN TỨC HOÀN MỸ</p>
+					</div>
+					<!-- Phần thứ hai -->
+					<div class="section2">
+						<div class="section2-left">
+							<img src="https://cdn.phunuvagiadinh.vn/phuongduy/auto/1_1_2018/mau-thu-chuc-tet-khach-hang-hay-nhat-1-2018-01-01-15-09.jpg" width="100%" height="100%">
+						</div>
+						<div class="section2-right">
+							<a href="">THƯ CHÚC TẾT QUÝ ĐỐI TÁC - KHÁCH HÀNG</a>
+						</div>
+					</div>
+					<!-- Phần thứ 3 -->
+					<div class="section3">
+						<div class="section3-row">
+							<a href="#">
+								<img src="./image/tv1.png" width="100%" height="134">
+							</a>
+							<p>
+								<a href="#">BLACK FRIDAY: SALE UP TO 40%, CÙNG HÀNG TRĂM QUÀ TẶNG HẤP DẪN</a>
+							</p>
+						</div>
+						<div class="section3-row">
+							<a href="#">
+								<img src="https://cosy.vn/img/mau-ban-an-mat-da-dep-1.jpg" width="100%" height="134">
+							</a>
+							<p>
+								<a href="#">HD81177 - RGL - GHẾ ĂN SÀNH ĐIỆU, SIÊU HACK KHÔNG GIAN</a>
+							</p>
+						</div>
+						<div class="section3-row">
+							<a href="#">
+								<img src="https://cf.shopee.vn/file/b1e476a83e8f034cad612f06fe342c1f" width="100%" height="134">
+							</a>
+							<p>
+								<a href="#">GIÁNG SINH HOÀN MỸ - RINH QUÀ CHO NHÀ HẠNH PHÚC</a>
+							</p>
+						</div>
+					</div>
+					<!-- Phần 4 -->
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="https://noithatxinh.vn/Images/Upload/images/tet-an-nhien-mung-nam-moi-2019-3.jpg" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">“Siêu sale mừng TẾT ĐẾN XUÂN VỀ”: Giảm tới 50% cho toàn bộ sản phẩm</a>
+							</h3>
+							<p>LENA DESIGN triển khai chương trình khuyến mãi giảm từ 15%-50% cho toàn bộ sản phẩm. Theo đó chương trình khuyến mãi kéo dài từ 5/2/2021 - 10/2/2021, đồng thời áp dụng khách mua hàng trực tiếp tại hệ thống Showroom ...</p>
+						</div>
+					</div>
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="https://noithathoaphat.nghean.vn/wp-content/uploads/2019/08/tu-ruou-dep-phong-khach-ban-co-dien.jpg" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">BIG SALE TOÀN BỘ SẢN PHẨM BÀN ĂN</a>
+							</h3>
+							<p>Với các nước phương Tây, hầu như mỗi gia đình đều có một hầm chứa rượu riêng còn ở châu Á, từ xa xưa tủ rượu đã là 1 món đồ trưng bày thể hiện độ chơi đắt giá, là “vũ khí” lợi hại mang đến sự ấn tượng và sang trọng cho ngôi nhà. …</p>
+						</div>
+					</div>
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="./image/ha1.png" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">SOFA GÓC VẢI – SỰ ĐƯƠNG ĐẠI VÀ KHÍ CHẤT VƯỢT THỜI GIAN!</a>
+							</h3>
+							<p>Sofa góc vải phòng khách đang ngày càng được ưa chuộng và sử dụng phổ biến, nhất là trong các phong cách thiết kế hiện đại. Điểm nổi bật của sofa vải đó là sự sáng tạo về màu sắc cũng như linh hoạt về kiểu dáng, phù hợp với những chủ nhân trẻ trung, …</p>
+						</div>
+					</div>
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="https://noithatitalia.net/uploads/images/resize/1038.3-583x335.jpg" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">SOFA CALIA – ĐẲNG CẤP LÀ MÃI MÃI!</a>
+							</h3>
+							<p>Khác với các dòng sản phẩm khác, sofa Calia táo bạo và mạnh dạn hơn khi đánh vào thị trường với đa dạng mẫu mã và màu sắc. Đây là con dao 2 lưỡi: có thể giúp Calia chinh phục được nhiều Gu thẩm mỹ hơn, nhưng cũng có thể khiến cho độ nhận diện …</p>
+						</div>
+					</div>
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="https://dodungnoithat.vn/wp-content/uploads/bo-ghe-sofa-phong-khach-hien-dai-dep-1.jpg" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">QUÀ SHOCK CHÀO ĐÔNG: MUA BÀN VỚI GIÁ 0 ĐỒNG!</a>
+							</h3>
+							<p>Chương trình khuyến mại siêu hấp dẫn, chỉ có tại LENA DESIGN: VENETO, SIENA, SANMINIATO ĐƯỢC GIẢM GIÁ 20- 30%, TẶNG NGAY BÀN TRÀ TÙY CHỌN TỚI 6.500.000 VNĐ! Giúp khách hàng có cơ hội sở hữu những siêu phẩm sofa, bàn trà với mức …</p>
+						</div>
+					</div>
+					<div class="section4">
+						<div class="section4-left">
+							<a href="#"><img src="https://intphcm.com/data/upload/banner-khai-truong-dep.jpg" width="100%" height="100%"></a>
+						</div>
+						<div class="section4-right">
+							<h3>
+								<a href="#">THÔNG BÁO: MỞ CỬA SHOWROOM</a>
+							</h3>
+							<p>Sau một thời gian tạm đóng cửa để đồng hành cùng Chính Phủ trong công tác kiểm soát dịch Covid 19, LENA DESIGN xin trân trọng thông báo tới quý khách hàng, một số Showroom thuộc Hệ thống của chúng tôi sẽ mở cửa trở lại để phục vụ quý khách tới tham …</p>
+						</div>
+					</div>
+					<div class="load">
+					<div class="load-link">
+						<a href="#">Bấm để xem thêm</a>
+					</div>
+				</div>
+				</div>
+				<!-- Cột bên phải -->
+				<div class="row-right">
+					<div class="wiget-title">
+						<p>DANH MỤC</p>
+					</div>
+					<div class="row-right1">
+						<ul>
+							<li>
+								<a href="#">Cẩm nang nhà đẹp<strong>(132)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẫu nhà đẹp<strong>(45)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẫu thiết kế nhà bếp <strong>(48)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẫu thiết kế phòng khách <strong>(27)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẫu thiết kế phòng ngủ <strong>(56)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẫu thiết kế phòng ngủ cho bé <strong>(34)</strong></a>
+							</li>
+							<li>
+								<a href="#">Mẹo hay mách bạn<strong>(98)</strong></a>
+							</li>
+							<li>
+								<a href="#">Phong thủy nội thất<strong>(112)</strong></a>
+							</li>
+							<li>
+								<a href="#">Tin tức LENA DESIGN <strong>(279)</strong></a>
+							</li>
+							<li>
+								<a href="#">Trang trí không gian nội thất<strong>(127)</strong></a>
+							</li>
+							<li>
+								<a href="#">Tư vấn chọn mua nội thất<strong>(168)</strong></a>
+							</li>
+							<li>
+								<a href="#">Video<strong>(48)</strong></a>
+							</li>
+						</ul>
+					</div>
+					<!-- Phần 2 -->
+					<div class="row-right2">
+						<p>XU HƯỚNG 2020</p>
+					</div>
+					<!-- Phần 3 -->
+					<div class="row-right3">
+						<img src="./image/tv2.png" width="100%" height="100%">
+						<p>
+							<a href="#">Điểm danh 15 màu sơn phòng ngủ đẹp nhất được ưa chuộng</a>
+						</p>
+					</div>
+					<!-- Phần 4 -->
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>6 Mẫu thiết kế nội thất phòng ngủ đẹp nhất 2020</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv3.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Mẫu phòng khách đẹp có cầu thang hợp với thiết kế nhà Việt Nam</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv4.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>11 Mẫu tủ bếp có quầy bar đẹp mê mẩn cho “team” trắng</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv5.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Mẫu thiết kế nội thất phòng khách đẹp dành cho căn hộ cao cấp</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv6.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Cách vệ sinh ghế sofa da nhanh hiệu quả tức thì 2017 – 2020</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv7.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Top 05 mẫu gạch ốp tường thích hợp cho không gian phòng ngủ</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv8.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Sơn phòng khách màu gì đẹp nhất, hợp phong thủy và phát tài</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv9.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+					<div class="row-right4">
+						<div id="left">
+							<a href="#">
+								<h4>Xu hướng thiết kế nội thất nhà bếp chung cư năm 2017</h4>
+							</a>
+						</div>
+						<div id="right">
+							<a href="#">
+								<img src="./image/tv10.png" width="135" height="85%">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Hết phần body -->
+
+	<!-- Phần footer -->
+		<footer class="wrap-footer">
+			<div class="container-footer">
+				<div class="footer">
+					<div class="bot-footer">
+						<div class="item-footer">
+							<div class="item-left">
+								<div class="item-left-footer">
+									<div class="thongtin">
+										ABOUT US
+									</div>
+									<ul>
+										<li>
+											<a href="">LIÊN HỆ</a>
+										</li>
+										<li>
+											<a href="">TUYỂN DỤNG</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										SẢN PHẨM
+									</div>
+									<ul>
+										<li>
+											<a href="">BÀN - tables</a>
+										</li>
+										<li>
+											<a href="">SOFA - sofas</a>
+										</li>
+										<li>
+											<a href="">GHẾ -chair</a>
+										</li>
+										<li>
+											<a href="">GƯƠNG - mirors</a>
+										</li>
+										<li>
+											<a href="">GIƯỜNG - beds</a>
+										</li>
+										<li>
+											<a href="">ĐÈN - lamps</a>
+										</li>
+										<li>
+											<a href="">BỘ SƯU TẬP - COLLECTIONS</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item-left-footer">
+									<div class="thongtin">
+										CHÍNH SÁCH
+									</div>
+									<ul>
+										<li>
+											<a href="">VẬN CHUYỂN</a>
+										</li>
+										<li>
+											<a href="./tuvan.html">TƯ VẤN</a>
+										</li>
+										<li>
+											<a href="./baohanh.html">BẢO HÀNH</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-right">
+								<div class="thongtin">
+									THÔNG TIN LIÊN HỆ
+								</div>
+								<p class="item-right-footer">
+									Công ty TNHH Kiến trúc và Nội thất LENA DESIGN
+									GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1543_hm-1-e1590382297249.png" height="14.5" width="14.5">
+									97-99 Cộng Hoà, lầu 3, phường 4, quận Tân Bình, Hồ Chí Minh
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1541_kd-1.png" width="14.5" height="14.5"> 
+									028 6267 6466 - ‭0866757758
+								</p>
+								<p class="item-right-footer">
+									<img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1542_j-1.png" width="14.5" height="14.5"> support@lenadesignvn.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fusion-builer">
+                <ul>
+                    <li class="cach">Copyright 2021 by LNDesign Joint Stock Company. All rights reserved.</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/fb.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">Quảng cáo/ Thương hiệu – LNDesign</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/mail.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">support@lenadesignvn.com</li>
+                </ul>
+			</div>
+			<div style="width: 100%; background-color: #dadada; height: 30px;"></div>
+		</footer>
+		<a href="" class="on-top" id="myBtn">
+			<img src="./image/back-top.png">
+		</a>
+		<!-- Hết phần footer -->
+		<script type="text/javascript" src="./js/ontop.js"></script>
+		<script type="text/javascript" src="./js/drop-down-timkiem.js"></script>
+</body>
+</html>

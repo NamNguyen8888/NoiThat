@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="giohang.css">
+	<title>Giỏ hàng</title>
+</head>
+<body>
+	<!-- Phần header -->
+    <header class="fixed">
+        <div class="sub-header">
+            <ul class="sub-container social">
+                <p> Hotline: +84 (28) 391 44 309</p>
+            </ul>
+            <ul class="sub-container user">
+                <li class="icon">
+                    <img src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png" width="20" height="20">
+                </li>
+                <li class="login-resignter" style="color: white;">
+                    <a href="./dangnhap.html">Đăng nhập</a>
+                    /
+                    <a href="./dangky.html">Đăng ký</a>
+                </li>
+                <li class="icon">
+                    <a href="./giohang.html">
+                        <img src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png" width="21" height="22">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-container2">
+            <div class="sub-content">
+                <div class="content-img">
+                    <a href="./trangchu.html">
+                        <img src="https://lndesign.com.vn/wp-content/uploads/2020/09/logo-moi-2.png" height="65">
+                    </a>
+                </div>
+                <div class="content-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img onclick="openSearch()" src="./image/search.png" width="23" height="23">
+                            </a>
+                            <!-- Hiện ra tìm kiếm -->
+                            <div id="myOverlay" class="overlay" style="display: none;">
+                                <span class="closebtn" onclick="closeSearch()">×</span>
+                                <div class="overlay-content">
+                                <form>
+                                    <input type="text" placeholder="Tìm Kiếm" name="search">
+                                    <button type="submit" style="width: 230px;height: 50px;">Xem tất cả các kết quả</button>
+                                </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./tintuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="./thietke.html">Thiết kế</a>
+                        </li>
+                        <li>
+                            <a href="./gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <div class="drop-down2">
+                                <a class="nut_dropdown">Sản phẩm</a>
+                                <div class="noidung_dropdown">
+                                    <a href="./sanpham.html">Sofa</a>
+                                    <a href="./sanpham.html">Bàn</a>
+                                    <a href="./sanpham.html">Ghế</a>
+                                    <a href="./sanpham.html">Giường</a>
+                                    <a href="./sanpham.html">Tủ</a>
+                                    <a href="./sanpham.html">Sale off</a>
+                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./trangchu.html">Trang chủ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hết phần header -->
+
+    <!-- Phần giỏ hàng -->
+    <div class="main-contain">
+    	<div class="section">
+    		<div class="section-content">
+                <div class="content-1 cart-row">
+                    <div id="thongtinsanpham">Thông tin sản phẩm</div>
+                    <div id="dongia">Đơn giá</div>
+                    <div id="soluong">Số lượng</div>
+                    <div id="thaotac">Thao tác</div>
+                </div>
+                <!-- Sản phẩm 1 -->
+                <div class="cart-items cart-row">
+                    <div id="thongtinsanpham">
+                        <div class="img-product">
+                            <img src="./image/t1.png" width="100%">
+                        </div>
+                        <div class="txt-product">Giường Alma</div>
+                    </div>
+                    <div id="dongia" style="text-align: center; font-weight: bold;">13.000.000VNĐ</div>
+                    <div id="soluong" style="text-align: center;">
+                        <input class="soluong-input" type="number" name="" min="1" value="1">
+                    </div>
+                    <div id="thaotac" style="text-align: center;">
+                        <button class="xoa" type="button">Xóa</button>
+                    </div>
+                </div>  
+                <!-- Sản phẩm 2 -->
+                <div class="cart-items cart-row">
+                    <div id="thongtinsanpham">
+                        <div class="img-product">
+                            <img src="https://aconcept.sgp1.digitaloceanspaces.com/products/830000229-NB001.png" width="100%">
+                        </div>
+                        <div class="txt-product">Bàn ăn Asama</div>
+                    </div>
+                    <div id="dongia" style="text-align: center; font-weight: bold;">4.600.000VNĐ</div>
+                    <div id="soluong" style="text-align: center;">
+                        <input class="soluong-input" type="number" name="" min="1" value="1">
+                    </div>
+                    <div id="thaotac" style="text-align: center;">
+                        <button class="xoa" type="button">Xóa</button>
+                    </div>
+                </div>
+                <!-- Tổng tiền -->
+                <div class="content-2" style="margin-top: 15px;">
+                    <div class="money">
+                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                        <span class="cart-total-price">17.600.000VNĐ</span>
+                    </div>
+                </div>
+                <!-- Các thao tác -->
+                <div class="content-3">
+                    <ul>
+                        <li id="tieptucmuahang">
+                            <button>Tiếp tục mua hàng</button>
+                        </li>
+                        <li id="thanhtoan">
+                            <button>Thanh toán</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!-- Hết phần giỏ hàng -->
+
+    <!-- Phần footer -->
+	<footer class="wrap-footer">
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="bot-footer">
+                        <div class="item-footer">
+                            <div class="item-left">
+                                <div class="item-left-footer">
+                                    <div class="thongtin">
+                                        ABOUT US
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="./lienhe.html">LIÊN HỆ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">TUYỂN DỤNG</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-left-footer">
+                                    <div class="thongtin">
+                                        SẢN PHẨM
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="">BÀN - tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="">SOFA - sofas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">GHẾ -chair</a>
+                                        </li>
+                                        <li>
+                                            <a href="">GƯƠNG - mirors</a>
+                                        </li>
+                                        <li>
+                                            <a href="">GIƯỜNG - beds</a>
+                                        </li>
+                                        <li>
+                                            <a href="">ĐÈN - lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="">BỘ SƯU TẬP - COLLECTIONS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-left-footer">
+                                    <div class="thongtin">
+                                        CHÍNH SÁCH
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="">VẬN CHUYỂN</a>
+                                        </li>
+                                        <li>
+                                            <a href="./tuvan.html">TƯ VẤN</a>
+                                        </li>
+                                        <li>
+                                            <a href="./baohanh.html">BẢO HÀNH</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="thongtin">
+                                    THÔNG TIN LIÊN HỆ
+                                </div>
+                                <p class="item-right-footer">
+                                    Công ty TNHH Kiến trúc và Nội thất LENA DESIGN
+                                    GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017
+                                </p>
+                                <p class="item-right-footer">
+                                    <img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1543_hm-1-e1590382297249.png" height="14.5" width="14.5">
+                                    97-99 Cộng Hoà, lầu 3, phường 4, quận Tân Bình, Hồ Chí Minh
+                                </p>
+                                <p class="item-right-footer">
+                                    <img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1541_kd-1.png" width="14.5" height="14.5"> 
+                                    028 6267 6466 - ‭0866757758
+                                </p>
+                                <p class="item-right-footer">
+                                    <img src="https://lndesign.com.vn/wp-content/uploads/2020/05/Rectangle_1542_j-1.png" width="14.5" height="14.5"> support@lenadesignvn.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fusion-builer">
+                <ul>
+                    <li class="cach">Copyright 2021 by LNDesign Joint Stock Company. All rights reserved.</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/fb.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">Quảng cáo/ Thương hiệu – LNDesign</li>
+                    <li class="cach" style="margin-top: 5px;"><img src="./image/mail.png" width="20" height="20"></li>
+                    <li style="padding-left: 6.5px;">support@lenadesignvn.com</li>
+                </ul>
+            </div>
+            <div style="width: 100%; background-color: #dadada; height: 30px;"></div>
+        </footer>
+        <a href="" class="on-top" id="myBtn">
+            <img src="./image/back-top.png">
+        </a>
+        <!-- Hết phần footer -->
+	<!-- Hết phần footer -->
+	<script type="text/javascript" src="./js/ontop.js"></script>
+    <script type="text/javascript" src="./js/drop-down-timkiem.js"></script>
+    <script type="text/javascript" src="./js/giohang.js"></script>
+</body>
+</html>
